@@ -45,6 +45,7 @@ class PoleChudes:
             if self.guessed_letters.__len__() == set(self.current_word).__len__():
                 self.is_win = True
         else:
+            print("Неправильно. Вы теряете жизнь")
             self.lives -= 1
 
     def main_logic(self):
